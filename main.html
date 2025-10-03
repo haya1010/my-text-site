@@ -7,34 +7,30 @@
 
 
 
-🗒️ Draft Presentation Script (Slide Order Version)
-
-Slide 1 — Title
 “Elucidating the Relationship Between Intestinal Motility and Higher Brain Functions”
 Thank you chair person for introducing me. today I manna be talking about my research on intestinal motility and its relationship with higher brain functions.
 
-Slide 2 — Motivation / Everyday Experience
-Have you ever experienced a change in mood when you had stomach pain, or felt that stress strongly affects your gut? Such experiences suggest that the gut and the brain are constantly communicating with each other.
 
-Slide 3 — Gut–Brain Communication
+Have you ever experienced a change in mood when you had stomach pain, or felt that stress strongly affects your gut? Such experiences suggest that the gut and the brain are constantly communicating with each other.
+  
 Indeed, there are both functional and anatomical connections between the intestine and the brain. Recent studies have even suggested that gut activity can affect higher brain functions, such as memory.
 
 
-Slide 5 — Limitation of Previous Studies
+
 However, most previous studies have focused on gut microbiota and brain function — they were snapshot measurements or over long timescales. To date, no study has recorded intestinal mechanical movements and hippocampal neural activity simultaneously in real time.
 
 
 
-Slide 4 — Aim
+
 Therefore, our motivation was to establish a system that enables real-time, continuous recordings of intestinal motility and brain activity, in order to clarify gut–brain interactions.
 
-Slide 5 — Intestinal Motility Measurement
+
 First, we needed a reliable method to measure gut motility. We sutured strain gauges directly onto the rat intestine to capture mechanical activity. Signals were recorded using a custom-built circuit and digitized for analysis.
 
-Slide 6 — Waveforms of Intestinal Motility
+
 This figure shows the raw strain-gauge signals. On the left, the raw data are displayed. We can observe periodic increases in amplitude. When we zoom in on the region highlighted in blue, distinctive waveforms become apparent. We interpreted these waveforms as intestinal motility.  Administration of metoclopramide further enhanced the amplitude, supporting this interpretation.
 
-Slide 7 — Frequency Analysis
+
 The raw data shown on the left were subjected to Fourier transform, and the results are displayed on the right as a log–log plot. A clear peak was observed around 0.6 Hz.
 
 A time–frequency scalogram was overlaid on the raw data shown on the left. As you can see, when the raw signal periodically increases in amplitude, the power in the ~0.6 Hz band also becomes stronger. In the time–frequency domain, this corresponds to pronounced activity around 0.6 Hz.
@@ -42,51 +38,47 @@ A time–frequency scalogram was overlaid on the raw data shown on the left. As 
 Next, two strain gauges were sutured onto the intestine along the longitudinal axis, approximately 2 cm apart. The raw signals obtained, along with band-pass filtered waveforms centered around the 0.6 Hz motility band, are shown here. The region highlighted with a black square was enlarged and is displayed in the lower left. In this panel, the instantaneous phases are also plotted. When the phase differences were visualized with a rose plot, a clear bias was observed, indicating that intestinal motility maintained a consistent phase difference, consistent with propagating movements.
 
 
-Slide 8 — Identification of Intestinal Motility
 From these analyses, including pharmacological modulation, frequency features, and phase relationships, we identified the strain-gauge signals as intestinal motility.
 
 
-Slide 10 — Chronic Gut–Brain Recording System
+
 Next, we extended the setup to establish a chronic simultaneous recording system. This included hippocampal and prefrontal LFPs, ECG, EMG, and intestinal motility via strain gauges.
 
-Slide 11 — Example Recording
+
 Here is an example of the simultaneously recorded signals: gut motility, hippocampal LFP, EMG, and ECG. This system allowed us to investigate real-time gut–brain interactions.
 
-Slide 12 — Ripple Analysis
+
 In the left panel, from top to bottom, you can see the hippocampal LFP band-pass filtered in the ripple frequency range, the corresponding scalogram of the hippocampal LFP, and at the bottom, the band-pass filtered intestinal motility signal. During intestinal motility, ripples were less frequent, and this difference was also visible in the scalogram compared to no-motility periods. Therefore, we quantified ripple occurrence. Periods with gut motility were labeled as ‘Move’ in red, and periods without motility were labeled as ‘No Move’ in black. The violin plot on the right shows ripple frequency across events, demonstrating that ripple occurrence was significantly reduced during intestinal motility.
 
 The bar graph on the left shows the number of gut-move and gut-no-move events for each individual animal, revealing variability and a tendency toward imbalance between conditions. To exclude potential effects of individual differences in ripple occurrence or unequal event counts, we averaged ripple frequency within each animal and performed statistics with one plot per subject. Even with this approach, the same result was obtained, and the significant difference was maintained.
 
 
-Slide 13 — Correlation
+
 Furthermore, as shown in the left panel, when we plotted a scatter diagram with gut motility amplitude on the x-axis and ripple frequency on the y-axis, we found a clear negative correlation: ripple frequency decreased as gut motility became stronger. As shown in the right panel, this correlation was validated against shuffled controls.
 
-Slide 14 — Locomotor Activity
+
 Ripples are known to occur frequently during quiet wakefulness and NREM sleep. To examine whether locomotor state differed between gut-move and gut-no-move conditions, we used EMG power as an index of movement. As shown on the left, EMG power did not differ significantly between gut-move and gut-no-move. Importantly, locomotor activity did not differ significantly between these states, indicating that the reduction in ripple occurrence was not simply explained by gross behavior.
 
 
-Slide 16 — Delta Power
+
 Ripples are known to occur preferentially during periods of high delta power. Therefore, we examined whether hippocampal and mPFC delta power differed between gut-move and gut-no-move states. Interestingly, hippocampal delta power was significantly lower during gut motility, suggesting state-dependent modulation of neural oscillations by intestinal activity.
 
-Slide 17 — Future Analysis
+
 Because we found a significant difference in delta power, it became necessary to analyze the data by classifying brain states such as REM, NREM, and wakefulness. Next, we plan to classify these states using EMG and the hippocampal theta–mPFC delta ratio. This will allow us to analyze ripple dynamics and gut effects within specific sleep states.
 
-Slide 18 — Toward Unbiased Classification
+
 Manual labeling of gut states can be subjective. Therefore, we are developing machine-learning–based automatic classification of intestinal motility. In addition, intestinal movements themselves appear to have several distinct types, so we aim to cluster them using unsupervised learning. As an initial approach, we constructed an autoencoder and trained it to reconstruct scalograms. This produced visually distinct clusters, which, when mapped back to the raw data, suggested that the method was functioning reasonably well.
 
 
-Slide 20 — Summary
+
 Finally, let me summarize our findings. We successfully established simultaneous recording of intestinal motility and LFP. Ripple occurrence was significantly reduced during motility, and we also found a negative correlation between motility amplitude and ripple frequency. Locomotor activity did not differ between gut states, but hippocampal delta power was reduced during motility.As for the future, we plan to classify brain states such as REM, NREM, and wakefulness using EMG and the theta/delta ratio. We will also develop deep learning–based methods for automatic gut motility labeling, and perform experimental manipulations of motility to test causal relationships.
 
-Slide 21 — Closing
+
 These findings highlight that intestinal motility can modulate hippocampal activity in real time. This opens a new avenue to understand how bodily states influence brain function.
 Thank you for your attention.
 
 
-1189 words
-腸のphaseとリップルの個体差削って1029words
 
-（ここにあなたの原文をそのまま貼る）
 </pre>
 </body>
 </html>
